@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Portal</title>
+</head>
+
+<body bgcolor="white">
+
+<center>
+
+    <h1>Student Registration Portal</h1>
+
+    <h3>Enter Register Number</h3>
+
+    <input type="text" id="reg" placeholder="Enter Register Number">
+    <br><br>
+
+    <button onclick="check()">Check</button>
+
+    <h3 id="output"></h3>
+
+</center>
+
+<script>
+
+function check()
+{
+    var a = document.getElementById("reg").value;
+
+    var roll = ["101", "102", "103", "104", "105"];
+
+    if(roll.includes(a))
+    {
+        document.getElementById("output").innerHTML =
+        "Roll Number Found";
+    }
+    else
+    {
+        document.getElementById("output").innerHTML =
+        "Roll Number Not Found";
+    }
+}
+
+</script>
+
+</body>
+</html>
